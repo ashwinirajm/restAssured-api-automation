@@ -29,7 +29,7 @@ public class ReqResApiTests extends ReqResBaseTest {
                         .when()
                         .get("/api/users?page=2");
 
-        Assert.assertEquals(ResponseUtil.getStatusCode(response), 200);
+        Assert.assertEquals(ResponseUtil.getStatusCode(response), 500);
         Assert.assertNotNull(ResponseUtil.getValueFromJson(response, "data"));
     }
 
