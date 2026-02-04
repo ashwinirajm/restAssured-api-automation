@@ -65,7 +65,7 @@ restassured-api-automation/
 - Allure Reporting
 - Jenkins CI
 
-### Run Specific Test Suite
+## 🚀 Run Specific Test Suite
 
 ```bash
 # Authentication Tests
@@ -85,7 +85,7 @@ mvn test -DsuiteXmlFile=src/test/resources/reqres-api-suite.xml
 mvn allure:serve
 ```
 
-### 🔄 CI Support (Jenkins)
+## 🔄 CI Support (Jenkins)
 
 The framework is integrated with Jenkins to support continuous integration and automated execution of API tests.
 - Jenkins pipeline is defined using a Jenkinsfile
@@ -94,7 +94,7 @@ The framework is integrated with Jenkins to support continuous integration and a
 - Allure reports are generated and published after test execution
 - Enables tracking of test results across builds for quick feedback
 
-### Allure Report 
+## 📊 Allure Report 
 
 (Sample execution report)
 
