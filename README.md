@@ -1,6 +1,6 @@
 # REST Assured API Automation Framework
 
-A scalable and production-style API automation framework built using REST Assured, TestNG, and Maven, with CI/CD support via Jenkins and reporting using Allure.
+A scalable, production-style API automation framework built using **REST Assured, TestNG, and Maven**, covering multiple public APIs and demonstrating real-world automation practices such as authentication handling, schema validation, with CI/CD support via Jenkins and reporting using Allure.
 
 ## 📐 Framework Design
 
@@ -73,31 +73,21 @@ mvn test -DsuiteXmlFile=src/test/resources/posts-api-suite.xml && mvn allure:ser
 mvn test -DsuiteXmlFile=src/test/resources/reqres-api-suite.xml && mvn allure:serve
 ```
 
-## 🔄 Jenkins CI/CD Integration
+### 🔄 CI Support (Jenkins)
 
-### Features
+The framework is integrated with Jenkins to support continuous integration and automated execution of API tests.
+- Jenkins pipeline is defined using a Jenkinsfile
+- Builds execute API test suites using Maven + TestNG
+- Supports running specific TestNG suites via build parameters
+- Allure reports are generated and published after test execution
+- Enables tracking of test results across builds for quick feedback
 
-✅ **Automated Pipeline** - Runs tests on every build
-✅ **Parameterized Builds** - Select which test suite to run
-✅ **Allure Reports** - Automatically published after each build
-✅ **TestNG Reports** - HTML reports available in Jenkins
-✅ **Build History** - Track test results over time
+### Allure Report 
 
-### Jenkins Pipeline Stages
+(Sample execution report)
 
-1. **Checkout** - Pulls latest code from GitHub
-2. **Clean** - Cleans previous build artifacts
-3. **Compile** - Compiles the project
-4. **Run Tests** - Executes selected test suite
-5. **Publish Reports** - Publishes Allure and TestNG reports
+<img width="1652" height="805" alt="Screenshot 2026-02-04 at 1 09 53 AM" src="https://github.com/user-attachments/assets/e9c7a500-004b-42ad-ae35-35e8b88429b8" />
 
-### Sample Allure Report Features
 
-- 📊 **Overview Dashboard** - Summary of test results
-- 🔍 **Test Cases** - Detailed test execution information
-- 📝 **Categories** - Test failures grouped by type
-- 📈 **Graphs** - Visual representation of test trends
-- 🕐 **Timeline** - Test execution timeline
-- 📂 **Behaviors** - Tests organized by features and stories
 
 
