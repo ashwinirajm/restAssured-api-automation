@@ -1,21 +1,21 @@
 # REST Assured API Automation Framework
 
-A scalable, production-style API automation framework built using **REST Assured, TestNG, and Maven**, covering multiple public APIs and demonstrating real-world automation practices such as authentication handling, schema validation, with CI/CD support via Jenkins and reporting using Allure.
+A scalable, production-style API automation framework built using **REST Assured, TestNG, and Maven**, covering multiple public APIs and demonstrating real-world automation practices such as authentication handling, schema validation, and CI/CD execution using Jenkins with Allure reporting.
 
 ## 📐 Framework Design
 
 The framework is structured in **phases**, each targeting a different public API and a specific automation concept.
 
-### 🔹 Phase 1 – ReqRes > User management
+### 🔹 Phase 1 – ReqRes (User management)
    - User CRUD operations
    - Authentication and authorization
 
-### 🔹 Phase 2 – JSONPlaceholder > Sample REST API
+### 🔹 Phase 2 – JSONPlaceholder (Sample REST API)
    - Posts API tests
    - Users API tests
    - Relationships and nested data tests
 
-### 🔹 Phase 3 – Restful Booker > Booking management system
+### 🔹 Phase 3 – Restful Booker (Booking management system)
    - Authentication handling (token + basic auth)
    - Booking CRUD operations
    - Protected endpoint testing (PUT / PATCH)
@@ -61,16 +61,20 @@ restassured-api-automation/
 
 ```bash
 # Authentication Tests
-mvn test -DsuiteXmlFile=src/test/resources/booking-auth-api-suite.xml && mvn allure:serve
+mvn test -DsuiteXmlFile=src/test/resources/booking-auth-api-suite.xml
+mvn allure:serve
 
 # Schema Validation Tests
-mvn test -DsuiteXmlFile=src/test/resources/booking-auth-schema-suite.xml && mvn allure:serve
+mvn test -DsuiteXmlFile=src/test/resources/booking-auth-schema-suite.xml
+mvn allure:serve
 
 # Posts API Tests
-mvn test -DsuiteXmlFile=src/test/resources/posts-api-suite.xml && mvn allure:serve
+mvn test -DsuiteXmlFile=src/test/resources/posts-api-suite.xml
+mvn allure:serve
 
 # ReqRes API Tests
-mvn test -DsuiteXmlFile=src/test/resources/reqres-api-suite.xml && mvn allure:serve
+mvn test -DsuiteXmlFile=src/test/resources/reqres-api-suite.xml
+mvn allure:serve
 ```
 
 ### 🔄 CI Support (Jenkins)
@@ -86,7 +90,7 @@ The framework is integrated with Jenkins to support continuous integration and a
 
 (Sample execution report)
 
-<img width="1652" height="805" alt="Screenshot 2026-02-04 at 1 09 53 AM" src="https://github.com/user-attachments/assets/e9c7a500-004b-42ad-ae35-35e8b88429b8" />
+<img width="1400" height="600" alt="Screenshot 2026-02-04 at 1 09 53 AM" src="https://github.com/user-attachments/assets/e9c7a500-004b-42ad-ae35-35e8b88429b8" />
 
 
 
