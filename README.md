@@ -1,5 +1,13 @@
 # REST Assured API Automation Framework
 
+![Java](https://img.shields.io/badge/Java-11%2B-blue)
+![REST Assured](https://img.shields.io/badge/REST--Assured-API%20Testing-green)
+![TestNG](https://img.shields.io/badge/TestNG-Testing-orange)
+![Maven](https://img.shields.io/badge/Maven-Build-red)
+![Allure](https://img.shields.io/badge/Allure-Reports-yellow)
+![Jenkins](https://img.shields.io/badge/Jenkins-CI%2FCD-blueviolet)
+
+
 A scalable, production-style API automation framework built using **REST Assured, TestNG, and Maven**, covering multiple public APIs and demonstrating real-world automation practices such as authentication handling, schema validation, and CI/CD execution using Jenkins with Allure reporting.
 
 ## 📐 Framework Design
